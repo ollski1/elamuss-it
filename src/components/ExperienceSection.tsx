@@ -62,7 +62,7 @@ const ExperienceSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-racing-red uppercase tracking-[0.2em] text-sm font-semibold mb-4">
+            <p className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4">
               Elamus
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-gradient mb-6">
@@ -87,7 +87,7 @@ const ExperienceSection = () => {
                   className="flex gap-4"
                 >
                   <div className="flex-shrink-0 w-12 h-12 rounded bg-secondary flex items-center justify-center">
-                    <feature.icon className="w-6 h-6 text-racing-red" />
+                    <feature.icon className="w-6 h-6 text-accent" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{feature.title}</h3>

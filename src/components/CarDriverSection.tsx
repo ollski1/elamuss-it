@@ -23,7 +23,7 @@ const CarDriverSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            className="text-racing-red uppercase tracking-[0.2em] text-sm font-semibold mb-4"
+            className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4"
           >
             Tehnika
           </motion.p>

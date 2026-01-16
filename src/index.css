@@ -26,21 +26,21 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 354 82% 49%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 174 100% 41%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 354 82% 49%;
+    --ring: 174 100% 41%;
 
     --radius: 0.25rem;
 
-    /* Custom Racing Tokens */
-    --racing-red: 354 82% 49%;
-    --racing-red-glow: 354 82% 55%;
+    /* Custom Petronas Racing Tokens */
+    --petronas: 174 100% 41%;
+    --petronas-glow: 174 100% 50%;
     --carbon: 0 0% 8%;
     --steel: 0 0% 25%;
     --chrome: 0 0% 85%;
@@ -48,10 +48,10 @@
     /* Gradients */
     --gradient-hero: linear-gradient(180deg, transparent 0%, hsl(0 0% 5% / 0.8) 100%);
     --gradient-card: linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 5%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(354 82% 49%) 0%, hsl(354 82% 35%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(174 100% 41%) 0%, hsl(174 100% 30%) 100%);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(354 82% 49% / 0.3);
+    --shadow-glow: 0 0 40px hsl(174 100% 41% / 0.4);
     --shadow-card: 0 20px 40px hsl(0 0% 0% / 0.5);
 
     /* Typography */

@@ -37,7 +37,7 @@ const ContactSection = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              className="text-racing-red uppercase tracking-[0.2em] text-sm font-semibold mb-4"
+              className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4"
             >
               Kontakt
             </motion.p>
@@ -78,13 +78,13 @@ const ContactSection = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded bg-secondary flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-racing-red" />
+                  <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Telefon</p>
                   <a
                     href="tel:+37256XXXXXX"
-                    className="text-foreground font-medium hover:text-racing-red transition-colors"
+                    className="text-foreground font-medium hover:text-accent transition-colors"
                   >
                     +372 56XX XXXX
                   </a>
@@ -93,13 +93,13 @@ const ContactSection = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded bg-secondary flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-racing-red" />
+                  <Mail className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">E-post</p>
                   <a
                     href="mailto:info@elamussoit.ee"
-                    className="text-foreground font-medium hover:text-racing-red transition-colors"
+                    className="text-foreground font-medium hover:text-accent transition-colors"
                   >
                     info@elamussoit.ee
                   </a>

@@ -16,9 +16,9 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         racing:
-          "bg-accent text-accent-foreground hover:bg-racing-red-glow glow-accent uppercase font-semibold tracking-widest",
+          "bg-accent text-accent-foreground hover:bg-petronas-glow glow-accent uppercase font-semibold tracking-widest",
         hero:
-          "bg-accent text-accent-foreground hover:bg-racing-red-glow glow-accent uppercase font-bold tracking-[0.2em] text-base",
+          "bg-accent text-accent-foreground hover:bg-petronas-glow glow-accent uppercase font-bold tracking-[0.2em] text-base",
         heroOutline:
           "border-2 border-foreground bg-transparent text-foreground hover:bg-foreground hover:text-background uppercase font-bold tracking-[0.2em] text-base",
       },
