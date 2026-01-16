@@ -62,7 +62,7 @@ const PricingSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            className="text-racing-red uppercase tracking-[0.2em] text-sm font-semibold mb-4"
+            className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4"
           >
             Hinnad
           </motion.p>
@@ -117,7 +117,7 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-8">
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-racing-red flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-muted-foreground">{feature}</span>
                   </li>
                 ))}

@@ -47,9 +47,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        petronas: {
+          DEFAULT: "hsl(var(--petronas))",
+          glow: "hsl(var(--petronas-glow))",
+        },
         racing: {
-          red: "hsl(var(--racing-red))",
-          "red-glow": "hsl(var(--racing-red-glow))",
           carbon: "hsl(var(--carbon))",
           steel: "hsl(var(--steel))",
           chrome: "hsl(var(--chrome))",

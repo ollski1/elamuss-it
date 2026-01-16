@@ -17,14 +17,13 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-background/40" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="text-racing-red uppercase tracking-[0.3em] text-sm md:text-base font-semibold mb-4">
+          <p className="text-accent uppercase tracking-[0.3em] text-sm md:text-base font-semibold mb-4">
             Porsche GT3 Cup Kogemus
           </p>
         </motion.div>
