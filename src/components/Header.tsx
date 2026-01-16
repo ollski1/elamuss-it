@@ -18,6 +18,7 @@ const Header = () => {
   const navItems = [
     { label: "Elamus", href: "#experience" },
     { label: "Auto & Sõitja", href: "#car" },
+    { label: "Galerii", href: "#gallery" },
     { label: "Hinnad", href: "#pricing" },
     { label: "Asukoht", href: "#location" },
     { label: "Kontakt", href: "#contact" },
