@@ -16,15 +16,15 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    
+
     toast({
       title: "Sõnum saadetud!",
       description: "Võtame teiega peagi ühendust.",
     });
-    
+
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
   };
@@ -71,8 +71,7 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-display text-2xl mb-6">OTSEÜHENDUS</h3>
                 <p className="text-muted-foreground mb-8">
-                  Soovid broneerida või on küsimusi? Võta meiega ühendust ja 
-                  aitame leida sulle sobiva aja.
+                  Kas tekkis lisaküsimusi või on soov broneerida? Võta meiega ühendust ja leiame lahenduse.
                 </p>
               </div>
 
@@ -101,15 +100,13 @@ const ContactSection = () => {
                     href="mailto:info@elamussoit.ee"
                     className="text-foreground font-medium hover:text-accent transition-colors"
                   >
-                    info@elamussoit.ee
+                    olivertiirmaa@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className="pt-6 border-t border-border">
-                <p className="text-sm text-muted-foreground">
-                  Ettevõtetele pakume ka arveldamist. Küsi pakkumist!
-                </p>
+                <p className="text-sm text-muted-foreground">Ettevõtetele pakume ka arveldamist. Küsi pakkumist!</p>
               </div>
             </motion.div>
 
@@ -125,13 +122,7 @@ const ContactSection = () => {
                     <label htmlFor="name" className="text-sm text-muted-foreground block mb-2">
                       Nimi *
                     </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      required
-                      placeholder="Sinu nimi"
-                      className="bg-card border-border"
-                    />
+                    <Input id="name" name="name" required placeholder="Sinu nimi" className="bg-card border-border" />
                   </div>
                   <div>
                     <label htmlFor="email" className="text-sm text-muted-foreground block mb-2">
@@ -156,7 +147,7 @@ const ContactSection = () => {
                     id="phone"
                     name="phone"
                     type="tel"
-                    placeholder="+372 5XXX XXXX"
+                    placeholder="+372 5021060"
                     className="bg-card border-border"
                   />
                 </div>
@@ -171,9 +162,8 @@ const ContactSection = () => {
                     className="w-full h-10 px-3 rounded-md bg-card border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="">Vali pakett...</option>
-                    <option value="adrenaliin">Adrenaliin (3 ringi) - 299€</option>
-                    <option value="ekstreemelamus">Ekstreemelamus (5 ringi) - 449€</option>
-                    <option value="vip">VIP Kogemus (5+ ringi) - 699€</option>
+                    <option value="adrenaliin">Sprint elamus (3 ringi) - 299€</option>
+                    <option value="ekstreemelamus">Endurance elamus (5 ringi) - 449€</option>
                     <option value="group">Grupp / Ettevõte</option>
                   </select>
                 </div>
@@ -191,13 +181,7 @@ const ContactSection = () => {
                   />
                 </div>
 
-                <Button
-                  type="submit"
-                  variant="racing"
-                  size="lg"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
+                <Button type="submit" variant="racing" size="lg" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? (
                     "Saadan..."
                   ) : (
