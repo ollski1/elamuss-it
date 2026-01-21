@@ -82,10 +82,10 @@ const ContactSection = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Telefon</p>
                   <a
-                    href="tel:+37256XXXXXX"
+                    href="tel:+372 5021060"
                     className="text-foreground font-medium hover:text-accent transition-colors"
                   >
-                    +372 56XX XXXX
+                    +372 5021060
                   </a>
                 </div>
               </div>
@@ -143,13 +143,7 @@ const ContactSection = () => {
                   <label htmlFor="phone" className="text-sm text-muted-foreground block mb-2">
                     Telefon
                   </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="+372 5021060"
-                    className="bg-card border-border"
-                  />
+                  <Input id="phone" name="phone" type="tel" placeholder="" className="bg-card border-border" />
                 </div>
 
                 <div>
