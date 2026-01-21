@@ -2,42 +2,31 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import cockpitImage from "@/assets/cockpit.jpg";
-import driverImage from "@/assets/driver.jpg";
-import trackImage from "@/assets/track.jpg";
-import heroImage from "@/assets/hero-racing.jpg";
+import elamused1 from "@/assets/gallery/elamused-1.jpeg";
+import elamused2 from "@/assets/gallery/elamused-2.jpeg";
+import elamused3 from "@/assets/gallery/elamused-3.jpeg";
+import elamused4 from "@/assets/gallery/elamused-4.jpeg";
 
-// Replace these with your actual photos
 const galleryImages = [
   {
-    src: heroImage,
-    alt: "Porsche GT3 Cup racing on track",
-    category: "Track",
+    src: elamused1,
+    alt: "Kliendid Porsche 911 GT3 Cup kõrval rajal",
+    category: "Elamused",
   },
   {
-    src: cockpitImage,
-    alt: "Racing cockpit interior",
-    category: "Car",
+    src: elamused2,
+    alt: "Võidusõitja ja klient Porsche kõrval",
+    category: "Elamused",
   },
   {
-    src: driverImage,
-    alt: "Professional racing driver",
-    category: "Experience",
+    src: elamused3,
+    alt: "Õnnelikud sõitjad võidusõiduautos",
+    category: "Elamused",
   },
   {
-    src: trackImage,
-    alt: "Porsche Ring aerial view",
-    category: "Track",
-  },
-  {
-    src: heroImage,
-    alt: "High-speed racing action",
-    category: "Experience",
-  },
-  {
-    src: cockpitImage,
-    alt: "GT3 Cup dashboard",
-    category: "Car",
+    src: elamused4,
+    alt: "Porsche Racing Experience auto boksides",
+    category: "Elamused",
   },
 ];
 
@@ -84,26 +73,24 @@ const GallerySection = () => {
               Galerii
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-gradient mb-6">
-              ELAMUSED PILDIS
+              ELAMUSED
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Vaata pilte meie võidusõidu kogemustest, autodest ja rahulolevatest klientidest
+              Vaata pilte meie võidusõidu kogemustest ja rahulolevatest klientidest
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {galleryImages.map((image, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative group cursor-pointer overflow-hidden rounded-lg ${
-                  index === 0 ? "md:col-span-2 md:row-span-2" : ""
-                }`}
+                className="relative group cursor-pointer overflow-hidden rounded-lg"
                 onClick={() => openLightbox(index)}
               >
-                <div className={`aspect-square ${index === 0 ? "md:aspect-auto md:h-full" : ""}`}>
+                <div className="aspect-[4/3]">
                   <img
                     src={image.src}
                     alt={image.alt}
@@ -133,33 +120,36 @@ const GallerySection = () => {
           className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
           onClick={closeLightbox}
         >
+          {/* Close button */}
           <button
-            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10"
+            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-50"
             onClick={closeLightbox}
           >
-            <X className="w-8 h-8" />
+            <X size={32} />
           </button>
 
+          {/* Navigation buttons */}
           <button
-            className="absolute left-4 md:left-8 text-white/70 hover:text-accent transition-colors z-10 p-2"
+            className="absolute left-6 text-white/70 hover:text-white transition-colors z-50"
             onClick={(e) => {
               e.stopPropagation();
               navigateImage("prev");
             }}
           >
-            <ChevronLeft className="w-10 h-10" />
+            <ChevronLeft size={48} />
           </button>
 
           <button
-            className="absolute right-4 md:right-8 text-white/70 hover:text-accent transition-colors z-10 p-2"
+            className="absolute right-6 text-white/70 hover:text-white transition-colors z-50"
             onClick={(e) => {
               e.stopPropagation();
               navigateImage("next");
             }}
           >
-            <ChevronRight className="w-10 h-10" />
+            <ChevronRight size={48} />
           </button>
 
+          {/* Image */}
           <motion.img
             key={selectedImage}
             initial={{ opacity: 0, scale: 0.9 }}
@@ -167,23 +157,13 @@ const GallerySection = () => {
             transition={{ duration: 0.3 }}
             src={galleryImages[selectedImage].src}
             alt={galleryImages[selectedImage].alt}
-            className="max-w-[90vw] max-h-[85vh] object-contain"
+            className="max-h-[85vh] max-w-[90vw] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
 
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-            {galleryImages.map((_, index) => (
-              <button
-                key={index}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  index === selectedImage ? "bg-accent" : "bg-white/30"
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedImage(index);
-                }}
-              />
-            ))}
+          {/* Image counter */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-sm">
+            {selectedImage + 1} / {galleryImages.length}
           </div>
         </motion.div>
       )}
