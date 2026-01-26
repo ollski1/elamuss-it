@@ -7,30 +7,29 @@ import { Button } from "@/components/ui/button";
 const packages = [
   {
     name: "Adrenaliin",
-    price: "299",
+    price: "300",
     laps: "3 ringi",
     popular: false,
     features: [
       "3 kiiret ringi Porsche Ringil",
       "Professionaalne võidusõitja roolis",
-      "Täielik ohutusevarustus",
+      "Vajalik turvavarustus",
       "Juhised ja ülevaade enne sõitu",
-      "Foto kaassõitja toolil",
+      "Fotod autos/autoga/juhiga",
     ],
   },
   {
     name: "Ekstreemelamus",
-    price: "449",
+    price: "400",
     laps: "5 ringi",
     popular: true,
     features: [
       "5 kiiret ringi Porsche Ringil",
       "Professionaalne võidusõitja roolis",
-      "Täielik ohutusevarustus",
+      "Vajalik turvavarustus",
       "Juhised ja ülevaade enne sõitu",
-      "Pardakaamera video",
-      "Foto kaassõitja toolil",
-      "Elamussõit diplom",
+      "GoPro video elamusest",
+      "Fotod autos/autoga/juhiga",
     ],
   },
   {
@@ -81,8 +80,8 @@ const PricingSection = () => {
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Kõik paketid sisaldavad professionaalset võidusõitjat roolis ja 
-            täielikku ohutusevarustust. Võtame vastu ka ettevõtete tellimusi.
+            Kõik paketid sisaldavad kogenud võidusõitjat roolis ja täielikku turvavarustust. Võtame vastu ka ettevõtete
+            tellimusi.
           </motion.p>
         </div>
 
@@ -123,11 +122,7 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button
-                variant={pkg.popular ? "racing" : "outline"}
-                className="w-full"
-                asChild
-              >
+              <Button variant={pkg.popular ? "racing" : "outline"} className="w-full" asChild>
                 <a href="#contact">Broneeri</a>
               </Button>
             </motion.div>
