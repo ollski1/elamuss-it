@@ -35,19 +35,16 @@ const LocationSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4">
-              Asukoht
-            </p>
+            <p className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4">Asukoht</p>
             <h2 className="font-display text-4xl md:text-5xl text-gradient mb-6">
               PORSCHE RING
               <br />
               PÄRNU
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Porsche Ring on Eesti esimene ja ainus rahvusvahelise tasemega 
-              ringrajarada, mis asub Audru vallas Pärnu lähistel. Rada on 
-              projekteeritud pakkuma mitmekesist ja tehnilist sõitu, sobides 
-              ideaalselt võidusõidu kogemuseks.
+              Porsche Ring on Eesti esimene ja ainus rahvusvahelise tasemega ringrada, mis asub Audru vallas Pärnu
+              lähistel. Rada on projekteeritud pakkuma mitmekesist ja tehnilist sõitu, sobides ideaalselt ja ohutult
+              elamussõiduks.
             </p>
 
             <div className="space-y-6">

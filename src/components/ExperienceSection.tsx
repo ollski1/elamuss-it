@@ -44,11 +44,7 @@ const ExperienceSection = () => {
             className="relative"
           >
             <div className="aspect-square rounded-lg overflow-hidden card-shadow">
-              <img
-                src={cockpitImage}
-                alt="Porsche GT3 Cup cockpit interior"
-                className="w-full h-full object-cover"
-              />
+              <img src={cockpitImage} alt="Porsche GT3 Cup cockpit interior" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground px-8 py-4 rounded">
               <p className="font-display text-4xl">10+</p>
@@ -62,19 +58,16 @@ const ExperienceSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4">
-              Elamus
-            </p>
+            <p className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4">Elamus</p>
             <h2 className="font-display text-4xl md:text-5xl text-gradient mb-6">
               UNUSTAMATU
               <br />
               ADRENALIIN
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Istu kaassõitja kohale ehtsas Porsche 911 GT3 Cup võidusõiduautos 
-              ja koge, mida tähendab sõita professionaalsel tasemel. Meie kogenud 
-              võidusõitja viib sind raja äärele - tunned iga kurvi, iga pidurdust 
-              ja iga kiirendust täie intensiivsusega.
+              Istu kaassõitja kohale ehtsas Porsche 911 GT3 Cup võidusõiduautos ja koge, mida tähendab sõita
+              professionaalsel tasemel. Kogenud võidusõitja viib sind rajale - tunned iga kurvi, iga pidurdust ja iga
+              kiirendust täie intensiivsusega.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">

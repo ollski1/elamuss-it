@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const packages = [
   {
-    name: "Adrenaliin",
+    name: "Sprint elamus",
     price: "300",
     laps: "3 ringi",
     popular: false,
@@ -19,7 +19,7 @@ const packages = [
     ],
   },
   {
-    name: "Ekstreemelamus",
+    name: "Endurance elamus",
     price: "400",
     laps: "5 ringi",
     popular: true,

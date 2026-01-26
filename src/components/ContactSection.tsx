@@ -97,7 +97,7 @@ const ContactSection = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">E-post</p>
                   <a
-                    href="mailto:info@elamussoit.ee"
+                    href="mailto:olivertiirmaa@gmail.com"
                     className="text-foreground font-medium hover:text-accent transition-colors"
                   >
                     olivertiirmaa@gmail.com
