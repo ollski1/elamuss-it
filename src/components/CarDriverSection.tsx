@@ -4,11 +4,11 @@ import { useRef } from "react";
 import driverImage from "@/assets/driver.jpg";
 
 const specs = [
-  { label: "Mootor", value: "4.0L Boxer" },
-  { label: "Võimsus", value: "485 hp" },
+  { label: "Mootor", value: "3.8L Bokser" },
+  { label: "Võimsus", value: "460 hp" },
   { label: "0-100 km/h", value: "3.2s" },
   { label: "Tippkiirus", value: "296 km/h" },
-  { label: "Kaal", value: "1,260 kg" },
+  { label: "Kaal", value: "1,200 kg" },
   { label: "Käigukast", value: "6-käiguline Sequential" },
 ];
 
@@ -47,14 +47,12 @@ const CarDriverSection = () => {
           >
             <h3 className="font-display text-3xl mb-6">KOGENUD VÕIDUSÕITJA</h3>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Sinu roolis on kogenud võidusõitja, kes on sõitnud rahvusvahelistel 
-              võistlustel üle 10 aasta. Ta tunneb Porsche Ringi iga kurvi ja 
-              tagab sulle nii ohutu kui ka põneva kogemuse.
+              Autoroolis on kogenud võidusõitja, kes on sõitnud rahvusvahelistel võistlustel ja ringradadel aastast
+              2014. Ta tunneb Porsche Ringi igat kurvi ja tagab sulle ohutu ja võimalikult autentse võidusõidu kogemuse.
             </p>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              GT3 Cup on sama auto, mida kasutatakse Porsche Supercupil ja 
-              Carrera Cupil üle maailma. See on puhas võidusõidumasin, mis on 
-              loodud rajale - ilma kompromissideta.
+              GT3 Cup on sama auto, mida on kasutatud Porsche Supercupis ja muudes Porsche Cupi sarjades üle maailma.
+              See on puhas võidusõidumasin, mis on on loodud rajale - ilma kompromissideta.
             </p>
 
             {/* Specs Grid */}
@@ -67,9 +65,7 @@ const CarDriverSection = () => {
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.05 }}
                   className="bg-card p-4 rounded border border-border"
                 >
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
-                    {spec.label}
-                  </p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{spec.label}</p>
                   <p className="font-display text-xl text-foreground">{spec.value}</p>
                 </motion.div>
               ))}
@@ -84,11 +80,7 @@ const CarDriverSection = () => {
             className="relative"
           >
             <div className="aspect-square rounded-lg overflow-hidden card-shadow">
-              <img
-                src={driverImage}
-                alt="Professional racing driver"
-                className="w-full h-full object-cover"
-              />
+              <img src={driverImage} alt="Professional racing driver" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>
