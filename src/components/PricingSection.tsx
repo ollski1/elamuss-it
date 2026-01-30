@@ -32,22 +32,6 @@ const packages = [
       "Fotod autos/autoga/juhiga",
     ],
   },
-  {
-    name: "VIP Kogemus",
-    price: "699",
-    laps: "5+ ringi",
-    popular: false,
-    features: [
-      "5+ ringi vastavalt soovile",
-      "Privaatne aeg rajal",
-      "Professionaalne võidusõitja roolis",
-      "Täielik ohutusevarustus",
-      "Pardakaamera video",
-      "Professionaalne fotosessioon",
-      "Elamussõit diplom",
-      "Eksklusiivsed kingitused",
-    ],
-  },
 ];
 
 const PricingSection = () => {
