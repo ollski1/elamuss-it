@@ -156,8 +156,8 @@ const ContactSection = () => {
                     className="w-full h-10 px-3 rounded-md bg-card border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="">Vali pakett...</option>
-                    <option value="adrenaliin">Sprint elamus (3 ringi) - 299€</option>
-                    <option value="ekstreemelamus">Endurance elamus (5 ringi) - 449€</option>
+                    <option value="adrenaliin">Sprint elamus (3 ringi) - 300€</option>
+                    <option value="ekstreemelamus">Endurance elamus (5 ringi) - 400€</option>
                     <option value="group">Grupp / Ettevõte</option>
                   </select>
                 </div>
