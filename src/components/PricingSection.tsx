@@ -69,7 +69,7 @@ const PricingSection = () => {
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {packages.map((pkg, index) => (
             <motion.div
               key={pkg.name}
