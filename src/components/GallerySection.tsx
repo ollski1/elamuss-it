@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import elamused1 from "@/assets/gallery/elamused-1.jpeg";
+
 import elamused2 from "@/assets/gallery/elamused-2.jpeg";
 import elamused3 from "@/assets/gallery/elamused-3.jpeg";
 import elamused4 from "@/assets/gallery/elamused-4.jpeg";
@@ -10,8 +10,8 @@ import elamused5 from "@/assets/gallery/elamused-5.jpeg";
 
 const galleryImages = [
   {
-    src: elamused1,
-    alt: "Kliendid Porsche 911 GT3 Cup kõrval rajal",
+    src: elamused2,
+    alt: "Võidusõitja ja klient Porsche kõrval",
     category: "Elamused",
   },
   {
@@ -87,6 +87,30 @@ const GallerySection = () => {
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+            {/* YouTube Video */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.5 }}
+              className="relative group overflow-hidden rounded-lg"
+            >
+              <div className="aspect-[4/3]">
+                <iframe
+                  src="https://www.youtube.com/embed/4drdzMuSasw"
+                  title="Porsche Racing Experience"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                />
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <div className="p-4">
+                  <span className="text-accent text-sm uppercase tracking-wider">
+                    Elamus
+                  </span>
+                </div>
+              </div>
+            </motion.div>
             {galleryImages.map((image, index) => (
               <motion.div
                 key={index}
