@@ -25,7 +25,7 @@ const CarDriverSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4"
           >
-            Tehnika
+            Auto & Sõitja
           </motion.p>
           <motion.h2
             ref={ref}
