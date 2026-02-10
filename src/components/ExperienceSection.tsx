@@ -22,7 +22,7 @@ const features = [
   {
     icon: Trophy,
     title: "Tehase võidusõiduauto",
-    description: "Sama auto, mida on kasutatud Porsche Supercupis ja erinevates Cupi sarjades",
+    description: "Sama auto, mida on kasutatud Porsche Supercupis ja erinevates Porsche Cupi sarjades",
   },
 ];
 
