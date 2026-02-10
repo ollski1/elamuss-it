@@ -3,11 +3,10 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Timer, Shield, Zap, Trophy } from "lucide-react";
 
-
 const features = [
   {
     icon: Zap,
-    title: "485 hobujõudu",
+    title: "460 hobujõudu",
     description: "Võidusõiduks ehitatud 3.8L boksermootoriga GT3 Cup",
   },
   {
