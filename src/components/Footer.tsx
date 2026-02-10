@@ -5,17 +5,11 @@ const Footer = () => {
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-          >
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             <a href="#" className="font-display text-2xl tracking-wider">
               ELAMUSSÕIT
             </a>
-            <p className="text-muted-foreground text-sm mt-2">
-              Porsche GT3 Cup kaassõitja kogemus
-            </p>
+            <p className="text-muted-foreground text-sm mt-2">Porsche GT3 Cup võidusõidu kogemus</p>
           </motion.div>
 
           <motion.div
