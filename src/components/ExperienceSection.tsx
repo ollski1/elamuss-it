@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Timer, Shield, Zap, Trophy } from "lucide-react";
-
+import cockpitImage from "@/assets/cockpit.jpg";
 
 const features = [
   {
     icon: Zap,
     title: "485 hobujõudu",
-    description: "Võidusõiduks ehitatud 4.0L boksermootoriga GT3 Cup",
+    description: "Võidusõiduks ehitatud 3.8L boksermootoriga GT3 Cup",
   },
   {
     icon: Timer,
     title: "3-5 kiiret ringi",
-    description: "Täispikk võidusõidu kogemus Porsche Ringil",
+    description: "Võidusõidu kogemus Porsche Ringil",
   },
   {
     icon: Shield,
@@ -22,8 +22,8 @@ const features = [
   },
   {
     icon: Trophy,
-    title: "Ehtne võidusõit",
-    description: "Sama auto, mida kasutatakse Porsche Supercupil",
+    title: "Tehase võidusõiduauto",
+    description: "Sama auto, mida on kasutatud Porsche Supercupis ja erinevates Cupi sarjades",
   },
 ];
 
@@ -43,14 +43,8 @@ const ExperienceSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-video rounded-lg overflow-hidden card-shadow">
-              <iframe
-                src="https://www.youtube.com/embed/4drdzMuSasw"
-                title="Porsche GT3 Cup Racing Experience"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
+            <div className="aspect-square rounded-lg overflow-hidden card-shadow">
+              <img src={cockpitImage} alt="Porsche GT3 Cup cockpit interior" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground px-8 py-4 rounded">
               <p className="font-display text-4xl">10+</p>
