@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { MapPin, Calendar, Clock } from "lucide-react";
-import trackImage from "@/assets/track.jpg";
+import trackImage from "@/assets/track.png";
 
 const LocationSection = () => {
   const ref = useRef(null);
