@@ -6,6 +6,7 @@ import elamused1 from "@/assets/gallery/elamused-1.jpeg";
 import elamused2 from "@/assets/gallery/elamused-2.jpeg";
 import elamused3 from "@/assets/gallery/elamused-3.jpeg";
 import elamused4 from "@/assets/gallery/elamused-4.jpeg";
+import elamused5 from "@/assets/gallery/elamused-5.jpeg";
 
 const galleryImages = [
   {
@@ -26,6 +27,11 @@ const galleryImages = [
   {
     src: elamused4,
     alt: "Porsche Racing Experience auto boksides",
+    category: "Elamused",
+  },
+  {
+    src: elamused5,
+    alt: "Võidusõitja ja klient Porsche GT3 Cup kõrval boksiteel",
     category: "Elamused",
   },
 ];
