@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Timer, Shield, Zap, Trophy } from "lucide-react";
-import cockpitImage from "@/assets/cockpit.jpg";
+
 
 const features = [
   {
@@ -43,8 +43,14 @@ const ExperienceSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square rounded-lg overflow-hidden card-shadow">
-              <img src={cockpitImage} alt="Porsche GT3 Cup cockpit interior" className="w-full h-full object-cover" />
+            <div className="aspect-video rounded-lg overflow-hidden card-shadow">
+              <iframe
+                src="https://www.youtube.com/embed/4drdzMuSasw"
+                title="Porsche GT3 Cup racing experience"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground px-8 py-4 rounded">
               <p className="font-display text-4xl">10+</p>
