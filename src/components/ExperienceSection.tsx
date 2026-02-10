@@ -52,9 +52,11 @@ const ExperienceSection = () => {
                 className="w-full h-full"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground px-8 py-4 rounded">
-              <p className="font-display text-4xl">10+</p>
-              <p className="text-sm uppercase tracking-widest">aastat kogemust</p>
+            <div className="mt-4 inline-flex bg-accent text-accent-foreground px-8 py-4 rounded">
+              <div>
+                <p className="font-display text-4xl">10+</p>
+                <p className="text-sm uppercase tracking-widest">aastat kogemust</p>
+              </div>
             </div>
           </motion.div>
 
