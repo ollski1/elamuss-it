@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-wrap items-center justify-between gap-6">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             <a href="#">
               <img src={logo} alt="Elamussõit" className="h-8" />
