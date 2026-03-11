@@ -1,38 +1,51 @@
+import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
-  const navItems = [
-    { label: "Elamus", href: "#experience" },
-    { label: "Auto & Sõitja", href: "#car" },
-    { label: "Hinnad", href: "#pricing" },
-    { label: "Asukoht", href: "#location" },
-    { label: "Kontakt", href: "#contact" },
-  ];
-
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-6">
-        {/* Main footer row — mirrors header layout */}
-        <div className="flex flex-col md:flex-row items-center justify-between h-16 gap-4 md:gap-0">
-          <a href="#" className="flex-shrink-0">
-            <img src={logo} alt="Elamussõit" className="h-7" />
-          </a>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+            <a href="#">
+              <img src={logo} alt="Elamussõit" className="h-8" />
+            </a>
+            
+          </motion.div>
 
-          <nav className="flex flex-wrap items-center justify-center gap-6">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-[0.2em]"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="flex flex-wrap items-center justify-center gap-6 text-sm"
+          >
+            <a href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">
+              Elamus
+            </a>
+            <a href="#car" className="text-muted-foreground hover:text-foreground transition-colors">
+              Auto & Sõitja
+            </a>
+            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              Hinnad
+            </a>
+            <a href="#location" className="text-muted-foreground hover:text-foreground transition-colors">
+              Asukoht
+            </a>
+            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              Kontakt
+            </a>
+          </motion.div>
 
-          <span className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Elamussõit
-          </span>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-muted-foreground text-sm"
+          >
+            © {new Date().getFullYear()} Elamussõit. Kõik õigused kaitstud.
+          </motion.div>
         </div>
       </div>
     </footer>
