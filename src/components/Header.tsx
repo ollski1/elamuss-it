@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,8 +35,8 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-display text-2xl tracking-wider">
-          ELAMUSSÕIT
+        <a href="#">
+          <img src={logo} alt="Elamussõit" className="h-8" />
         </a>
 
         {/* Desktop Navigation */}

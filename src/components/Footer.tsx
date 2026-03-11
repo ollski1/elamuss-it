@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,8 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-            <a href="#" className="font-display text-2xl tracking-wider">
-              ELAMUSSÕIT
+            <a href="#">
+              <img src={logo} alt="Elamussõit" className="h-8" />
             </a>
             <p className="text-muted-foreground text-sm mt-2">Porsche GT3 Cup võidusõidu kogemus</p>
           </motion.div>
