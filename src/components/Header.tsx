@@ -35,8 +35,8 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-display text-2xl tracking-wider">
-          ELAMUSSÕIT
+        <a href="#">
+          <img src={logo} alt="Elamussõit" className="h-8" />
         </a>
 
         {/* Desktop Navigation */}
