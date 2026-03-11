@@ -109,8 +109,6 @@ const PricingSection = () => {
               <Button variant={pkg.popular ? "racing" : "outline"} size="lg" className="w-full uppercase font-semibold tracking-widest" asChild>
                 <a href="#contact">Broneeri</a>
               </Button>
-                <a href="#contact">Broneeri</a>
-              </Button>
             </motion.div>
           ))}
         </div>
