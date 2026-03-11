@@ -12,8 +12,9 @@ const packages = [
     popular: false,
     features: [
       "3 kiiret ringi Porsche Ringil",
-      "Professionaalne võidusõitja roolis",
-      "Vajalik turvavarustus",
+      "Kogenud võidusõitja roolis",
+      "Kohustuslik turvavarustus",
+      "Raadioside läbi kiivri juhiga",
       "Juhised ja ülevaade enne sõitu",
       "Fotod autos/autoga/juhiga",
     ],
@@ -25,8 +26,9 @@ const packages = [
     popular: true,
     features: [
       "5 kiiret ringi Porsche Ringil",
-      "Professionaalne võidusõitja roolis",
-      "Vajalik turvavarustus",
+      "Kogenud võidusõitja roolis",
+      "Kohustuslik turvavarustus",
+      "Raadioside läbi kiivri juhiga",
       "Juhised ja ülevaade enne sõitu",
       "GoPro video elamusest",
       "Fotod autos/autoga/juhiga",
@@ -76,7 +78,7 @@ const PricingSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-              className={`relative bg-gradient-card rounded-lg p-8 border flex flex-col ${
+              className={`relative bg-gradient-card rounded-lg p-8 border ${
                 pkg.popular ? "border-accent glow-accent" : "border-border"
               }`}
             >
@@ -97,7 +99,7 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <ul className="space-y-4 mb-8 flex-grow">
+              <ul className="space-y-4 mb-8">
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -106,7 +108,7 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button variant={pkg.popular ? "racing" : "outline"} size="lg" className="w-full uppercase font-semibold tracking-widest" asChild>
+              <Button variant={pkg.popular ? "racing" : "outline"} className="w-full" asChild>
                 <a href="#contact">Broneeri</a>
               </Button>
             </motion.div>
