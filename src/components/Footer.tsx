@@ -10,7 +10,7 @@ const Footer = () => {
             <a href="#">
               <img src={logo} alt="Elamussõit" className="h-8" />
             </a>
-            <p className="text-muted-foreground text-sm mt-2">Porsche GT3 Cup võidusõidu kogemus</p>
+            
           </motion.div>
 
           <motion.div
