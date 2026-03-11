@@ -106,7 +106,7 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button variant={pkg.popular ? "racing" : "outline"} className="w-full" asChild>
+              <Button variant={pkg.popular ? "racing" : "outline"} size="lg" className="w-full uppercase" asChild>
                 <a href="#contact">Broneeri</a>
               </Button>
             </motion.div>
