@@ -27,12 +27,6 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-8"
           >
-            <div className="text-center">
-              <h3 className="font-display text-2xl mb-6">OTSEÜHENDUS</h3>
-              <p className="text-muted-foreground mb-8">
-                Kas tekkis lisaküsimusi või on soov broneerida? Võta meiega ühendust ja leiame lahenduse.
-              </p>
-            </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
               <div className="flex items-center gap-4">
