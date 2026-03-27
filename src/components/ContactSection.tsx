@@ -185,15 +185,9 @@ const ContactSection = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="racing" size="lg" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    "Saadan..."
-                  ) : (
-                    <>
-                      Saada päring
-                      <Send className="w-4 h-4 ml-2" />
-                    </>
-                  )}
+                <Button type="submit" variant="racing" size="lg" className="w-full">
+                  Saada päring
+                  <Send className="w-4 h-4 ml-2" />
                 </Button>
               </form>
             </motion.div>
