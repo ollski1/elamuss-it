@@ -21,7 +21,7 @@ const packages = [
   },
   {
     name: "Endurance elamus",
-    price: "400",
+    price: "500",
     laps: "5 ringi",
     popular: true,
     features: [
