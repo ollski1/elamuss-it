@@ -121,7 +121,7 @@ const PricingSection = () => {
           transition={{ delay: 0.8 }}
           className="text-center text-muted-foreground text-sm mt-10"
         >
-          Kinkekaardid saadaval. Suurematele gruppidele teeme erihinda.
+          Suurematele gruppidele teeme erihinda.
         </motion.p>
       </div>
     </section>
