@@ -13,20 +13,30 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const pkg = formData.get('package') as string;
+    const message = formData.get('message') as string;
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const subject = encodeURIComponent(`Elamussõit päring: ${pkg || 'Üldine päring'}`);
+    const body = encodeURIComponent(
+      `Nimi: ${name}\nE-post: ${email}\nTelefon: ${phone || 'Pole märgitud'}\nPakett: ${pkg || 'Pole valitud'}\n\nSõnum:\n${message || 'Pole sõnumit'}`
+    );
+
+    window.location.href = `mailto:olivertiirmaa@gmail.com?subject=${subject}&body=${body}`;
 
     toast({
-      title: "Sõnum saadetud!",
-      description: "Võtame teiega peagi ühendust.",
+      title: "E-posti rakendus avatud!",
+      description: "Saada email meile otse oma e-posti rakendusest.",
     });
 
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+    form.reset();
   };
 
   return (
