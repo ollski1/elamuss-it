@@ -108,7 +108,12 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button variant={pkg.popular ? "racing" : "outline"} size="lg" className="w-full uppercase font-semibold tracking-widest" asChild>
+              <Button
+                variant={pkg.popular ? "racing" : "outline"}
+                size="lg"
+                className="w-full uppercase font-semibold tracking-widest"
+                asChild
+              >
                 <a href="#contact">BRONEERI</a>
               </Button>
             </motion.div>
@@ -121,7 +126,7 @@ const PricingSection = () => {
           transition={{ delay: 0.8 }}
           className="text-center text-muted-foreground text-sm mt-10"
         >
-          Suurematele gruppidele teeme erihinda.
+          Kõik hinnad sisaldavad käibemaksu.
         </motion.p>
       </div>
     </section>
