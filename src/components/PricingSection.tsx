@@ -66,8 +66,7 @@ const PricingSection = () => {
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Kõik paketid sisaldavad kogenud võidusõitjat roolis ja täielikku turvavarustust. Võtame vastu ka ettevõtete
-            tellimusi.
+            Kõik paketid sisaldavad kohustuslikku turvavarustust.
           </motion.p>
         </div>
 
