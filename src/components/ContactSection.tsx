@@ -11,30 +11,13 @@ const ContactSection = () => {
     <section id="contact" className="py-24 bg-racing-carbon">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16" ref={ref}>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               className="text-accent uppercase tracking-[0.2em] text-sm font-semibold mb-4"
             >
               Kontakt
-            </motion.p>
-            <motion.h2
-              ref={ref}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1 }}
-              className="font-display text-4xl md:text-5xl text-gradient mb-4"
-            >
-              VÕTA ÜHENDUST
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2 }}
-              className="text-muted-foreground text-lg"
-            >
-              Helista või saada email otse broneerimiseks
             </motion.p>
           </div>
 
@@ -44,12 +27,6 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-8"
           >
-            <div className="text-center">
-              <h3 className="font-display text-2xl mb-6">OTSEÜHENDUS</h3>
-              <p className="text-muted-foreground mb-8">
-                Kas tekkis lisaküsimusi või on soov broneerida? Võta meiega ühendust ja leiame lahenduse.
-              </p>
-            </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
               <div className="flex items-center gap-4">
