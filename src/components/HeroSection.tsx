@@ -32,7 +32,7 @@ const HeroSection = () => {
         >
           TUNNETA TÕELIST ADRENALIINI
           <br />
-          <span className="text-gradient-accent">RAJAL</span>
+          <span className="text-gradient-accent">RINGRAJAL</span>
         </motion.h1>
 
         <motion.p
