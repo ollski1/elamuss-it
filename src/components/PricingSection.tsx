@@ -128,6 +128,8 @@ const PricingSection = () => {
         >
           Kõik hinnad sisaldavad käibemaksu.
         </motion.p>
+
+        <AvailableDatesCalendar />
       </div>
     </section>
   );
