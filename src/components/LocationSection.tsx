@@ -83,7 +83,8 @@ const LocationSection = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Kestus</h3>
                   <p className="text-muted-foreground">
-                    Kogu kogemus kestab umbes 1-2 tundi
+                    Elamus kestab umbes üks tund - turvavarustuse selga panek, juhised ja ettevalmistus mida teha
+                    hädaolukorras, autosse istumine ja ohutusnõuetele vastavalt rihmadega kinnitamine.
                     <br />
                     Sisaldab juhiseid ja ettevalmistust
                   </p>
