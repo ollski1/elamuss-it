@@ -55,8 +55,9 @@ const AvailableDatesCalendar = () => {
             );
             return !isAvailable;
           }}
+          numberOfMonths={1}
           fromMonth={new Date(new Date().getFullYear(), 4)}
-          toMonth={new Date(new Date().getFullYear(), 8)}
+          toMonth={new Date(new Date().getFullYear(), 9)}
           fromDate={new Date()}
         />
       </div>
