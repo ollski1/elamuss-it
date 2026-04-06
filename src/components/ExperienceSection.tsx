@@ -44,7 +44,7 @@ const ExperienceSection = () => {
           >
             <div className="aspect-video rounded-lg overflow-hidden card-shadow">
               <iframe
-                src="https://www.youtube.com/embed/4drdzMuSasw"
+                src="https://www.youtube.com/embed/-szBOjIngFU"
                 title="Porsche GT3 Cup racing experience"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
