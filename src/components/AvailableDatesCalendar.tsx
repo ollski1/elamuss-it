@@ -44,6 +44,7 @@ const AvailableDatesCalendar = () => {
         <Calendar
           mode="multiple"
           selected={availableDates}
+          showOutsideDays={false}
           className={cn("p-3 pointer-events-auto bg-gradient-card rounded-lg border border-border")}
           modifiers={{ available: availableDates }}
           modifiersClassNames={{
