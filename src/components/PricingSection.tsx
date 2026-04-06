@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AvailableDatesCalendar from "@/components/AvailableDatesCalendar";
 
 const packages = [
   {
@@ -127,6 +128,8 @@ const PricingSection = () => {
         >
           Kõik hinnad sisaldavad käibemaksu.
         </motion.p>
+
+        <AvailableDatesCalendar />
       </div>
     </section>
   );
