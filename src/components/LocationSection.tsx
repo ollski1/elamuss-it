@@ -86,7 +86,6 @@ const LocationSection = () => {
                     Elamus kestab umbes üks tund - turvavarustuse selga panek, juhised ja ettevalmistus mida teha
                     hädaolukorras, autosse istumine ja ohutusnõuetele vastavalt rihmadega kinnitamine.
                     <br />
-                    Sisaldab juhiseid ja ettevalmistust
                   </p>
                 </div>
               </div>
