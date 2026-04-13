@@ -47,8 +47,9 @@ const CarDriverSection = () => {
           >
             <h3 className="font-display text-3xl mb-6">KOGENUD VÕIDUSÕITJA</h3>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Autoroolis on kogenud võidusõitja, kes on sõitnud rahvusvahelistel võistlustel ja ringradadel aastast
-              2014. Ta tunneb Porsche Ringi igat kurvi ja tagab sulle ohutu ja võimalikult autentse võidusõidu kogemuse.
+              Elamussõitu viib läbi võidusõitja, kes on sõitnud rahvusvahelistel võistlustel ja ringradadel aastast
+              2014. Lisaks on tal olemas võidusõidu kogemus Porsche Ringil. Ta tunneb Porsche Ringi igat kurvi ja tagab
+              sulle ohutu ja võimalikult autentse võidusõidu kogemuse.
             </p>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
               GT3 Cup on sama auto, mida on kasutatud Porsche Supercupis ja muudes Porsche Cupi sarjades üle maailma.
