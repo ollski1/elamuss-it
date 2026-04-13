@@ -16,7 +16,7 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Täielik ohutus",
+    title: "Ohutus",
     description: "Professionaalne varustus ja kogenud võidusõitja roolis",
   },
   {
