@@ -72,9 +72,9 @@ const ExperienceSection = () => {
               ADRENALIIN
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Istu kaassõitja kohale ehtsas Porsche 911 GT3 Cup võidusõiduautos ja koge, mida tähendab sõita
-              professionaalsel tasemel. Kogenud võidusõitja viib sind rajale - tunned iga kurvi, iga pidurdust ja iga
-              kiirendust täie intensiivsusega.
+              Istu kaassõitja kohale ehtsas Porsche 911 GT3 Cup võidusõiduautos ja saa osa tundest, mida kogeb
+              võidusõitja rajal. Istudes kogenud võidusõitja kõrvalpingil, tunned igat kurvi, pidurdust, kiirendust täie
+              intensiivsusega.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
