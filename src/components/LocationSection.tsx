@@ -81,10 +81,11 @@ const LocationSection = () => {
                   <Clock className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">Kestus</h3>
+                  <h3 className="font-semibold text-foreground mb-1">Elamus</h3>
                   <p className="text-muted-foreground">
-                    Elamus kestab umbes üks tund - turvavarustuse selga panek, juhised ja ettevalmistus mida teha
-                    hädaolukorras, autosse istumine ja ohutusnõuetele vastavalt rihmadega kinnitamine.
+                    Tavaliselt toimuvad elamussõidud Porsche Ringi autode rajaõhtul, suuremate tellimuste puhul on
+                    võimalik pakkuda elamussõitu muul ajal tingimusel, et rada on vaba. Gruppide puhul on võimalik rada
+                    kinni panna soovitud ajaks, et Elamussõite teha.
                     <br />
                   </p>
                 </div>
