@@ -12,7 +12,7 @@ const TermsInfoSection = () => {
     <section id="terms" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-16" ref={ref}>
+          <div className="text-center mb-8" ref={ref}>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
