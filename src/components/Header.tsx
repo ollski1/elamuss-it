@@ -22,6 +22,7 @@ const Header = () => {
     { label: "Galerii", href: "#gallery" },
     { label: "Hinnad", href: "#pricing" },
     { label: "Asukoht", href: "#location" },
+    { label: "Tingimused", href: "#terms" },
     { label: "Kontakt", href: "#contact" },
   ];
 
