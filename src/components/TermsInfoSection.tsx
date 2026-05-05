@@ -28,10 +28,6 @@ const TermsInfoSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col items-center gap-6"
           >
-            <p className="text-muted-foreground text-center">
-              Enne sõitu palume tutvuda vastutusest lahtiütlemise lepinguga.
-            </p>
-
             <div className="text-muted-foreground text-sm space-y-4 text-center mt-4">
               <p>
                 Käesolev võidusõidu elamus teenus on täielikult sõltumatu eraettevõtte poolt pakutav teenus.
@@ -46,6 +42,10 @@ const TermsInfoSection = () => {
                 Porsche kaubamärgid (sh Porsche®, GT3 Cup jt) on kasutatud üksnes sõiduki mudeli kirjeldamiseks ega tähenda mingit koostööd või seost Porsche kontserniga.
               </p>
             </div>
+
+            <p className="text-muted-foreground text-center">
+              Enne sõitu palume tutvuda vastutusest lahtiütlemise lepinguga.
+            </p>
 
             <Button variant="racing" size="lg" asChild>
               <a
